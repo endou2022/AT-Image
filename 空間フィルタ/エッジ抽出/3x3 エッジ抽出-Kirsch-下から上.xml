@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<xml_kind>空間フィルタ</xml_kind>
+<name>3x3 エッジ抽出-Kirsch-下から上</name>
+<description>3x3 エッジ抽出-Kirsch-下から上</description>
+<multiplier>1.</multiplier>
+<divisor>1.</divisor>
+<offset>0.</offset>
+<kernel type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    5. 5. 5. -3. 0. -3. -3. -3. -3.</data></kernel>
+</opencv_storage>

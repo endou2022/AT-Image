@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<xml_kind>空間フィルタ</xml_kind>
+<name>3x3 アンシャープ3</name>
+<description>3x3 アンシャープ k=9</description>
+<multiplier>9.</multiplier>
+<divisor>9.</divisor>
+<offset>0.</offset>
+<kernel type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    -1. -1. -1. -1. 9. -1. -1. -1. -1.</data></kernel>
+</opencv_storage>

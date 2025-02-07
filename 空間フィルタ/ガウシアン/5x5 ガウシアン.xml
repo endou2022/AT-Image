@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<xml_kind>空間フィルタ</xml_kind>
+<name>5x5 ガウシアン</name>
+<description>5x5 ガウシアン</description>
+<multiplier>1.</multiplier>
+<divisor>256.</divisor>
+<offset>0.</offset>
+<kernel type_id="opencv-matrix">
+  <rows>5</rows>
+  <cols>5</cols>
+  <dt>d</dt>
+  <data>
+    1. 4. 6. 4. 1. 4. 16. 24. 16. 4. 6. 24. 36. 24. 6. 4. 16. 24. 16. 4. 1. 4. 6.
+    4. 1.</data></kernel>
+</opencv_storage>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<xml_kind>空間フィルタ</xml_kind>
+<name>3-3平滑化1</name>
+<description>3x3 平滑化</description>
+<multiplier>1.</multiplier>
+<divisor>10.</divisor>
+<offset>0.</offset>
+<kernel type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    1. 1. 1. 1. 2. 1. 1. 1. 1.</data></kernel>
+</opencv_storage>

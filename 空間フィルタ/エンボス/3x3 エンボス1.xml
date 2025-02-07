@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<xml_kind>空間フィルタ</xml_kind>
+<name>3-3エンボス1</name>
+<description>3x3 エンボス</description>
+<multiplier>1.</multiplier>
+<divisor>1.</divisor>
+<offset>128.</offset>
+<kernel type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    1. 0. 0. 0. 0. 0. 0. 0. -1.</data></kernel>
+</opencv_storage>

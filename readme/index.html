@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="画像処理,画像解析,プログラム">
+	<meta name="description" content="画像処理プログラムAT-Imageの説明">
+	<title>AT-Image</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+	<table class="whole">
+		<!-- menu -->
+		<tr>
+			<td class="menu">
+				<a href="index.html">AT-Imageについて</a><br>
+				<a href="index.html#gaiyou">AT-Image概要</a><br>
+				<a href="c.html">インストール</a><br>
+				<a href="c.html#uninstall">アンインストール</a><br>
+				<a href="d.html">使い方</a><br>
+				<a href="j.html">ソースファイルについて</a><br>
+				<a href="e.html">制限事項</a><br>
+				<a href="i.html">ライセンスについて</a><br>
+
+			</td>
+			<!-- title -->
+			<td class="content">
+				<h1 class="chapter">AT-Imageについて</h1>
+				<!-- content -->
+
+				　<span class="softname">AT-Image</span> とは、画像処理クラス(UOpenCV)の
+				デバッグのために作ったソフトです。PhotoShop や paint.net のようなことはで
+				きません。シェーディング補正とかヒストグラム変換とかの「画像処理」を行うソフトです。<br>
+				OpenCVの関数のパラメータを決めることにも利用できます。<br>
+				自分用ですが、画像処理の勉強にも使ってもらえそうそうなので、フリーウエアとして公開します<br>
+				<br>
+				<span class="softname">AT-Image</span>は、
+
+				<dl>
+					<dt>・画像の読み書き</dt>
+					<dd>Windows bitmaps、JPEG、Portable Network Graphics、WebP</dd>
+					<dt>・画像変換</dt>
+					<dd>グレースケール変換、モノトーン変換、擬似カラー表示、色画像分離、２値化、フーリエ変換</dd>
+					<dt>・シェーディング補正</dt>
+					<dd>黒基準画像シェーディング補正、白・黒基準画像シェーディング補正、凹凸係数シェーディング補正、モルフォロジー演算シェーディング補正</dd>
+					<dt>・ヒストグラム変換</dt>
+					<dd>コントラスト制限適応ヒストグラム平坦化、平坦化、正規化、拡張、伸張、反転、ネガポジ反転、平均と標準偏差を指定して変換、コントラスト明るさ変換</dd>
+					<dt>・画像フィルタ</dt>
+					<dd>単純平滑化、メディアンフィルタ、ガウシアンフィルタ、アンシャープフィルタ、バイラテラルフィルタ、エッジプレザービング、細部強調フィルタ、ゾーベルフィルタ、ラプラシアンフィルタ、空間フィルタ (たたみ込み演算)</dd>
+					<dt>・ルックアップテーブル</dt>
+					<dt>・モルフォロジー処理</dt>
+					<dt>・輪郭化</dt>
+					<dd>Canny、findContours、モルフォロジー</dd>
+					<dt>・円・線分検出</dt>
+					<dd>ハフ変換（円）、ハフ変換（線分）、Fast Line Detector（線分）、Line Segment Detector(線分)</dd>
+					<dt>・アート効果</dt>
+					<dd>油絵調変換、水彩画調変換、鉛筆画調変換、ポスタリゼーション</dd>
+					<dt>・２値画像処理</dt>
+					<dd>固定閾値、自動閾値(大津の手法)、自動閾値(トライアングルアルゴリズム)、適応的２値化</dd>
+					<dt>・逆FFT変換(マスク指定可能)</dt>
+					<dt>・画像間演算</dt>
+					<dd>重み付き加算、加算、減算、差の絶対値、大きい方、小さい方、AND、OR、XOR、透過</dd>
+					<dt>・画像計測</dt>
+					<dd>ヒストグラム、水平方向周辺分布、垂直方向周辺分布、線上の分布</dd>
+					<dt>・２値画像のラベリング処理</dt>
+				</dl>
+				などができます。使えばわかる簡単なソフトです。
+
+				<a name="gaiyou">
+					<h1 class="chapter">AT-Image概要</h1>
+				</a>
+				<dl>
+					<dt>[ソフト名]</dt>
+					<dd>AT-Image</dd>
+					<dd>画像処理ソフト。OpenCVのパラメータ試行や画像処理の学習に利用できる</dd>
+					<dt>[作者・連絡先]</dt>
+					<dd>FINAL</dd>
+					<dd>E-mail : <img src="addr.png" alt="email address"></dd>
+					<dt>[動作環境]</dt>
+					<dd>Windows8.1 / 10 / 11 </dd>
+					<dt>[必要な物]</dt>
+					<dd>なし</dd>
+					<dt>[取り扱い種別]</dt>
+					<dd>フリーソフトウェア</dd>
+					<dt>[ライセンス]</dt>
+					<dd>BSDライセンス
+					<dt>[インストール]</dt>
+					<dd>(A)インストーラーを実行する</dd>
+					<dd>(B)圧縮ファイルを伸張する</dd>
+					<dt>[アンインストール]</dt>
+					<dd>(A)「プログラムと機能」よりアンインストール実行</dd>
+					<dd>(B)伸張したフォルダを削除</dd>
+					<dd>AT-Imageはレジストリを使用しません</dd>
+				</dl>
+
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

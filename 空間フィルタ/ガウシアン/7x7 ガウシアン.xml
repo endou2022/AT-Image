@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<xml_kind>空間フィルタ</xml_kind>
+<name>7x7 ガウシアン</name>
+<description>7x7 ガウシアン</description>
+<multiplier>1.</multiplier>
+<divisor>4096.</divisor>
+<offset>0.</offset>
+<kernel type_id="opencv-matrix">
+  <rows>7</rows>
+  <cols>7</cols>
+  <dt>d</dt>
+  <data>
+    1. 6. 15. 20. 15. 6. 1. 6. 36. 90. 120. 90. 36. 6. 15. 90. 225. 300. 225. 90. 15. 20. 120.
+    300. 400. 300. 120. 2. 15. 90. 225. 300. 225. 90. 15. 6. 36. 90. 120. 90. 36. 6. 1. 6. 15. 20.
+    15. 6. 1.</data></kernel>
+</opencv_storage>

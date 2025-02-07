@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<xml_kind>空間フィルタ</xml_kind>
+<name>5-5平滑化Savitzy-Golay</name>
+<description>5x5 平滑化 Savitzy-Golay</description>
+<multiplier>1.</multiplier>
+<divisor>175.</divisor>
+<offset>0.</offset>
+<kernel type_id="opencv-matrix">
+  <rows>5</rows>
+  <cols>5</cols>
+  <dt>d</dt>
+  <data>
+    -13. 2. 7. 2. -13. 2. 17. 22. 17. 2. 7. 22. 27. 22. 7. 2. 17. 22.
+    17. 2. -13. 2. 7. 2. -13.</data></kernel>
+</opencv_storage>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="画像処理,画像解析,プログラム">
+	<meta name="description" content="画像処理プログラムAT-Imageの説明">
+	<title>AT-Image</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+	<table class="whole">
+		<!-- menu -->
+		<tr>
+			<td class="menu">
+				<a href="index.html">AT-Imageについて</a><br>
+				<a href="index.html#gaiyou">AT-Image概要</a><br>
+				<a href="c.html">インストール</a><br>
+				<a href="c.html#uninstall">アンインストール</a><br>
+				<a href="d.html">使い方</a><br>
+				<a href="j.html">ソースファイルについて</a><br>
+				<a href="e.html">制限事項</a><br>
+				<a href="i.html">ライセンスについて</a><br>
+
+			</td>
+			<!-- title -->
+			<td class="content">
+				<h1 class="chapter">インストール</h1>
+				<!-- content -->
+				<h3>ZIP版の場合</h3>
+				　ダウンロードしたファイルを伸張し、適当なフォルダに入れてください。<br>
+				ディスクトップにショートカットを置くと便利でしょう。<br>
+				初期設定ファイル(ATImage.ini)に書き込み権限を与えてください。書き込み権限がない場合、ソフトウエアが終了できません。
+
+				<h3>インストーラー版の場合</h3>
+				　インストーラーを実行してください<br>
+				　<span class="note">インストーラーは、Inno Setup Compiler (https://jrsoftware.org/isdl.php) (2023/06/13)を利用して作成しました。
+					インストール／アンインストールの際に、 ウイルス対策ソフトによっては、unins000.exe がウイルス
+					（マルウエア）であるという警告が出ることがありますが、誤検知と思われます。<br>
+					unins000.exe について、Microsoft Defender と ウイルスバスターで検査しましたが、ウイルスではないという結果を得ています。(2023/06/13)</span>
+
+				<h3>ソースファイルの場合</h3>
+				　ダウンロードしたファイルを伸張し、適当なフォルダに入れてください。<br>
+				　Python 3.9<br>
+				　opencv-python 4.5.5<br>
+				　opencv-contrib-python 4.5.5<br>
+				　matplotlib 3.5<br>
+				　wxPython 4.1.1 (4.1.1でないとウインドウ整列メニューが英語になります。)<br>
+				　が必要です。実行時に足りないライブラリがあると言われたら、随時足してください。<br>
+				opencv-python , opencv-contrib-python のバージョンは揃える必要があります。その他のバージョンは適当でもかまわないのではないかと思います。<br>
+				初期設定ファイル(ATImage.ini)に書き込み権限を与えてください。書き込み権限がない場合、ソフトウエアが終了できません。
+
+				<h4>注意事項</h4>
+				　ATImage.ini , splash.jpg , iconsフォルダ内のファイル がないと、起動時にエラーが出ます。<br>
+
+				<a name="uninstall">
+					<h1 class="chapter">アンインストール</h1>
+				</a>
+				<h3>ZIP版の場合</h3>
+				　インストールしたフォルダを削除してください。<br>
+				<span class="softname">AT-Image</span>はレジストリを操作しません。<br>
+
+				<h3>インストーラー版の場合</h3>
+				　コントロールパネルの「プログラムと機能」でアンインストールしてください。<br>
+				　<span class="note">ウイルス対策ソフトによっては、unins000.exe がウイルス（マルウエア）であると判断し
+					起動できないことがあります。この場合は、ウイルス対策ソフトを一時止めるなどの対策や、ソフトウエア削除ソフトを利用してください。
+					ウイルス対策ソフトを一時停止した場合は、削除が終わったらソフトを再起動してください。</span>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

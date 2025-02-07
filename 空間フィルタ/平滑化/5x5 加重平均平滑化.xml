@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<xml_kind>空間フィルタ</xml_kind>
+<name>5x5 加重平均平滑化</name>
+<description>5x5 加重平均平滑化</description>
+<multiplier>1.</multiplier>
+<divisor>65.</divisor>
+<offset>0.</offset>
+<kernel type_id="opencv-matrix">
+  <rows>5</rows>
+  <cols>5</cols>
+  <dt>d</dt>
+  <data>
+    1. 2. 3. 2. 1. 2. 3. 4. 3. 2. 3. 4. 5. 4. 3. 2. 3. 4. 3. 2. 1. 2. 3.
+    2. 1.</data></kernel>
+</opencv_storage>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="画像処理,画像解析,プログラム">
+	<meta name="description" content="画像処理プログラムAT-Imageの説明">
+	<title>AT-Image</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+	<table class="whole">
+		<!-- menu -->
+		<tr>
+			<td class="menu">
+				<a href="index.html">AT-Imageについて</a><br>
+				<a href="index.html#gaiyou">AT-Image概要</a><br>
+				<a href="c.html">インストール</a><br>
+				<a href="c.html#uninstall">アンインストール</a><br>
+				<a href="d.html">使い方</a><br>
+				<a href="j.html">ソースファイルについて</a><br>
+				<a href="e.html">制限事項</a><br>
+				<a href="i.html">ライセンスについて</a><br>
+
+			</td>
+
+			<!-- title -->
+			<td class="content">
+				<h1 class="chapter">ソースファイルについて</h1>
+				<!-- content -->
+				ソースファイルも公開します。興味のある人はソースファイルを覗いてください。<br>
+				ソースファイルの文字コードはUTF-8です。<br>
+				改造も自由に行っていただいてかまいません（ライセンス参照）。<br>
+				<br>
+				次の環境で開発しました<br>
+				Windows10<br>
+				Python ver.3.9.7<br>
+				pythonのライブラリ<br>
+				　opencv-python ver.4.7.0.72<br>
+				　opencv-contrib-python ver.4.7.0.72<br>
+				　matplotlib ver.3.7.1<br>
+				　wxPython ver.4.1.1<br>
+				　cx-Freeze ver.6.15.1<br>
+				　その他(ライブラリをインストールするときに一緒にインストールされる)<br>
+				　wxPythonは4.1.1でないと、ウインドウ整列メニューが英語になります。<br>
+				wxFormBuilder ver.3.10.1<br>
+				サクラエディタ<br>
+
+				<br>
+				ファイルの説明<br>
+				<table class="files">
+					<thead>
+						<tr>
+							<th>ファイル</th>
+							<th>説明</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>CL.fbp</td>
+							<td>wxFormBuilderのファイル</td>
+						</tr>
+						<tr>
+							<td>CL.py</td>
+							<td>wxFormBuilderのGenerate Codeで作られるファイル。<br>一部を書き換えている</td>
+						</tr>
+						<tr>
+							<td>ATImage.ini<br>
+								splash.jpg<br>
+								iconsフォルダのファイル
+							</td>
+							<td>ファイルがないと起動時にエラーが出る<br>
+								ATImage.ini が書き込み許可されていないと、ソフトウエアが終了できない。</td>
+						</tr>
+						<tr>
+							<td>UOpenCV.py</td>
+							<td><a href="https://endou2022.github.io/uopencv/readme/index.html">OpenCVのラッパークラス</a>。<br>
+								AT-Imageから独立して使うことができる</td>
+						</tr>
+						<tr>
+							<td>*.py</td>
+							<td>ソースコードの本体</td>
+						</tr>
+						<tr>
+							<td>colorscaleフォルダのファイル</td>
+							<td>擬似カラー表示で使うファイル</td>
+						</tr>
+						<tr>
+							<td>setup.py</td>
+							<td>cx-Freeze用の設定ファイル<br>
+								setup.py build として利用する。<br>
+								実行ファイル(AT-Image.exe) と同じフォルダに、ATImage.ini、splash.jpg、iconsフォルダ、colorscaleフォルダを入れる必要がある</td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
+
+				AT-Imageは MDI インターフェースを使っているので、wxFormBuilderで作った CL.py の一部を変更しています。変更点は次のとおりです<br>
+
+				<pre>
+class MWin ( <span class="change">wx.MDIParentFrame</span> ):
+
+    def __init__( self, parent ):
+        <span class="change">wx.MDIParentFrame</span>.__init__ ( self, parent,
+
+class CWin ( <span class="change">wx.MDIChildFrame</span> ):
+
+    def __init__( self, parent ):
+        <span class="change">wx.MDIChildFrame</span>.__init__ ( self, parent,
+
+class GWin ( <span class="change">wx.MDIChildFrame</span> ):
+
+    def __init__( self, parent ):
+        <span class="change">wx.MDIChildFrame</span>.__init__ ( self, parent,
+class BWin ( <span class="change">wx.MDIChildFrame</span> ):
+
+    def __init__( self, parent ):
+        <span class="change">wx.MDIChildFrame</span>.__init__ ( self, parent,
+class EWin ( <span class="change">wx.MDIChildFrame</span> ):
+
+    def __init__( self, parent ):
+        <span class="change">wx.MDIChildFrame</span>.__init__ ( self, parent,
+class LWin ( <span class="change">wx.MDIChildFrame</span> ):
+
+    def __init__( self, parent ):
+        <span class="change">wx.MDIChildFrame</span>.__init__ ( self, parent,
+</pre>
+				class MWin は wx.MDIParentFrame 、それ以外は wx.MDIChildFrame です。<br>
+				<br>
+				OpenCVを開発されている方々に感謝いたします。<br>
+				プログラムを作る際に参考にしたホームページは、ソースファイルの中に書いてあります。かっこ内はホームページを閲覧した日付です。<br>
+				技術情報を公開してくださっている方々に感謝します。
+				<h2 class="chapter">更新履歴</h2>
+				<pre>
+更新履歴(抜粋)
+6.1        23/05/30    画像処理ダイアローグを出すときに、画像表示倍率を元ウインドウの表示倍率に合わせた
+                       表示倍率を変えただけで、処理画像の大きさは元画像と変わらない
+                       (以前は一律1.0倍としていた)
+6.0.1      22/10/01    クリップボードからの貼り付けに対応した
+6.0        22/10/01    pythonでUOpenCVクラスを作成したのに合わせて、プログラムをpythonで全面書き換えた
+                       GUIはwxPythonを利用した
+5.5        11/07/17    ２値画像統計の個々の物体のデータをCSV出力できるようにした
+5.0        07/11/23    UBitmapクラスを改訂したのにあわせて、全面改定
+                       一部のダイアローグにプレビューを追加
+4.8        07/11/05    JEDIライブラリを使用
+                       GraphicExライブラリを使用
+                       BMP,JPGの読み込みはUBitmap
+                       GIFの読み込みはJvGIF ,
+                       GIF,PSD,PNG,WMF,EMF,TGA,PSP,RGB,PCXの読み込みはGraphicEx
+4.0        06/02/15    UBitmap の仕様見直しにともない、全面書き直し
+                       使うルーチンを精査した
+                       4.Xはすでにあるけど、公開はしていなかったので、バージョン番号を仕切り直し
+                       アイコンをイチョウの葉からトマトに変更
+                       カラー画像のルックアップテーブル処理を、輝度のみにした
+                       CMYK変換を追加、GIFクラスを利用しGIF画像の読み込みをできるようにした
+3.9        05/06/15    コンパイラをC++Builder ver.6に変更
+                       輝度反転ルーチンにあったバグを修正
+3.4        04/10/09    フィルタ、フーリエ変換、自己相関特徴処理、FFTフィルタ、
+                       ２値画像統計にプログレッシブバー表示を追加
+                       初期設定ファイルルーチンを変更
+                       空間フィルタ、ルックアップテーブルファイルを追加
+3.0α1     04/06/16    仕様の全面見直し(ver.2.5を元に全面改定)
+                       Form2クラスからUBitmapクラスに変更
+                       未実相機能が多い暫定版
+2.0        99/05/05    仕様の全面見直し(MDI化、その他)
+1.0        98/05/14    初期バージョン
+</pre>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
